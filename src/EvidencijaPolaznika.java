@@ -1,11 +1,8 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 
 public class EvidencijaPolaznika {
     public static void main(String[] args) {
-        HashSet<Polaznik> polaznici = new HashSet<>();
+        TreeSet<Polaznik> polaznici = new TreeSet<>();
 
         Polaznik p1 = new Polaznik("Josip", "Glavaš", "josip.glavas@gmail.com");
         Polaznik p2 = new Polaznik("Pero", "Perić", "pero.peric@outlook.com");
@@ -33,9 +30,8 @@ public class EvidencijaPolaznika {
             System.out.println("Polaznik već postoji: " + p4);
 
         System.out.println("\nSvi polaznici (sortirani po prezimenu):");
-        List<Polaznik> sortirani = new ArrayList<>(polaznici);
-        Collections.sort(sortirani);
-        for (Polaznik p : sortirani) {
+
+        for (Polaznik p : polaznici) {
             System.out.println(p);
         }
     }

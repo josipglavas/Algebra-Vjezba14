@@ -23,23 +23,7 @@ public class Polaznik implements Comparable<Polaznik> {
 
     @Override
     public int compareTo(Polaznik other) {
-        int prezimeCompare = prezime.compareTo(other.prezime);
-        if (prezimeCompare != 0) {
-            return prezimeCompare;
-        }
-        int imeCompare = ime.compareTo(other.ime);
-        if (imeCompare != 0) {
-            return imeCompare;
-        }
         return email.compareTo(other.email);
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Polaznik)) return false;
-        Polaznik p = (Polaznik) o;
-        return email.equals(p.email);
     }
 
     @Override
