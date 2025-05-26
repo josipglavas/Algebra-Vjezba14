@@ -7,7 +7,7 @@ public class EvidencijaPolaznika {
         Polaznik p1 = new Polaznik("Josip", "Glavaš", "josip.glavas@gmail.com");
         Polaznik p2 = new Polaznik("Pero", "Perić", "pero.peric@outlook.com");
         Polaznik p3 = new Polaznik("Ana", "Anić", "ana.anic21@hotmail.com");
-        Polaznik p4 = new Polaznik("Ana", "Anić", "ana.anic21@hotmail.com");
+        Polaznik p4 = new Polaznik("Ana", "Banić", "ana.anic21@hotmail.com"); // drukcije prezime ali isti email, ne dodajemo u set
 
         if (polaznici.add(p1))
             System.out.println("Polaznik dodan: " + p1);
